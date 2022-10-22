@@ -14,24 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        User::factory(10)->create();
-
-        $user = User::factory()->create([
+        User::factory()->create([
             'name' => 'Test User',
             'email' => 'admin@admin.com',
         ]);
 
+        User::factory(10)->create();
+
         $this->call([
             EmployeeSeeder::class,
             AttendanceSeeder::class,
-        ]);
-
-        $this->command->table(['Name', 'Email', 'Password'], [
-            [
-                $user->name,
-                $user->email,
-                'password',
-            ],
         ]);
     }
 }

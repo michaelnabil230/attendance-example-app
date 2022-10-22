@@ -11,7 +11,7 @@ class EmployeeController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function index()
     {
@@ -26,7 +26,7 @@ class EmployeeController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function create()
     {
@@ -37,7 +37,7 @@ class EmployeeController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \App\Http\Requests\StoreEmployeeRequest  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(StoreEmployeeRequest $request)
     {
@@ -50,7 +50,7 @@ class EmployeeController extends Controller
      * Display the specified resource.
      *
      * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function show(Employee $employee)
     {
@@ -61,7 +61,7 @@ class EmployeeController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\View\View
      */
     public function edit(Employee $employee)
     {
@@ -73,7 +73,7 @@ class EmployeeController extends Controller
      *
      * @param  \App\Http\Requests\UpdateEmployeeRequest  $request
      * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(UpdateEmployeeRequest $request, Employee $employee)
     {
@@ -86,7 +86,7 @@ class EmployeeController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  \App\Models\Employee  $employee
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Employee $employee)
     {

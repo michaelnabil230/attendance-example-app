@@ -2,22 +2,38 @@
 
 # Get started
 
-1 - Install packages
+### Fallow steps
 
-```bash
-$ composer install 
-```
+- 1
 
-or
+  ```bash
+  $ composer install 
+  ```
 
-```bash
-$ composer update 
-```
+- 2
 
-2 - project init
+  ```bash
+  $ mysql -u root
+  ```
 
-```bash
-$ php artisan project:init 
-```
+- 3
+  ```bash
+  $ CREATE DATABASE db_name;
+  ```
 
-## Email and password of test in console
+- 4
+  ```bash
+  $ cp .env.example .env
+  ```
+
+- 5
+  ```bash
+  $ php artisan project:install
+  ```
+
+- 6
+  ```bash
+  $ php artisan serve
+  ```
+
+- 7 - Copy the email and password of test in console and login

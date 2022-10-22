@@ -1,0 +1,17 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    level: 4
+    paths:
+        - app
+        - config
+        - database
+        - routes
+
+    checkOctaneCompatibility: true
+    noUnnecessaryCollectionCall: false
+    checkMissingIterableValueType: false
+    parallel:
+        maximumNumberOfProcesses: 4
