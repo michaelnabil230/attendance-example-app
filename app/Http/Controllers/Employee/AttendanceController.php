@@ -10,7 +10,6 @@ class AttendanceController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @param  \App\Models\Employee  $employee
      * @return \Illuminate\View\View
      */
     public function index(Employee $employee)

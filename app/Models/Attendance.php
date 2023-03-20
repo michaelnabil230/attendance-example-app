@@ -41,8 +41,6 @@ class Attendance extends Model
 
     /**
      * Get the attendance's total time.
-     *
-     * @return \Illuminate\Database\Eloquent\Casts\Attribute
      */
     protected function totalTime(): Attribute
     {
@@ -53,8 +51,6 @@ class Attendance extends Model
 
     /**
      * Get the employee that owns the Attendance
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function employee(): BelongsTo
     {

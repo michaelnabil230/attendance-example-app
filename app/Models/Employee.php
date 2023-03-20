@@ -26,8 +26,6 @@ class Employee extends Model
 
     /**
      * Get all of the attendances for the Employee
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function attendances(): HasMany
     {
@@ -36,8 +34,6 @@ class Employee extends Model
 
     /**
      * Get the lastAttendance associated with the Employee
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
      */
     public function lastAttendance(): HasOne
     {
